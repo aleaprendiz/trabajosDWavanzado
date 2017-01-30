@@ -1,0 +1,22 @@
+.resultado{
+  display: none;
+}
+
+
+.campoDeJuego{
+  border: 1px solid black;
+  width: 80%;
+  height: 500px;
+  background-color: rgb(222, 159, 251);
+  margin: 20px;
+}
+
+
+.objetivo{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  /*display: none;*/
+
+}

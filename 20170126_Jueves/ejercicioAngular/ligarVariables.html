@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <meta charset="utf-8">
+        <title>Clase Angular</title>
+        <script type="text/javascript" src="js/angular.min.js" ></script>
+    </head>
+    <body>
+        <div>
+            <h4>ng-model en angula</h4>
+            <p>
+                <label>
+                    Dime tu nombre:
+                </label>
+                <!--input type="text" placeholder="Aqui va tu nombre"  value="HOLA" size="30"></p-->
+                <input type="text" ng-model="nombre" placeholder="Aqui va tu nombre" >
+            </p>
+            <p>
+                <label>
+                    Tu nombre es:
+                </label>
+                {{nombre| uppercase}}
+            </p>
+
+
+            <p>
+                <label>Seleccionar pais: </label>
+                <select  ng-model="pais">
+                    <option value="1">México</option>
+                    <option value="2">Francia</option>
+                    <option value="3">Alemania</option>
+                </select>
+                <br>
+                <label> Tu pais es:</label>{{pais}}
+            </p>
+
+            <p>
+                <label>Seleccione su género:</label>
+                <input type="radio"  value="M" ng-model= "genero" checked>Masculino
+                <input type="radio"  value="F" ng-model= "genero">Femenino
+                <br>
+                <label>Tu género es: </label>{{genero}}
+            </p>
+
+            <p>
+              <label>Pasatiempos:</label>
+              <input type="checkbox" ng-model="opc1">Patinar
+              <input type="checkbox" ng-model="opc2">Leer
+              <br>
+              <label>A ti te gusta: </label> {{ opc1 }}{{ opc2 }}
+
+            </p>
+        </div>
+
+        <script type="text/javascript" src="js/app.js">
+
+        </script>
+    </body>
+</html>
